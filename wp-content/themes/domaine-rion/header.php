@@ -33,35 +33,13 @@
  </head>  
 <body> 
 
-<div class="top-menu row align-bottom">
-
-  <!-- logo -->
-    <div class="small-12 medium-2 large-2 logo column text-center">     
-      <a href="<?=get_home_url()?>"><img alt="Soulard & Raimbault | Avocats" src="<?=get_template_directory_uri()?>/img/logo.png"></a>
+  <div id="header">
+    <a class="logo" href="<?=get_site_url()?>">
+      <img  alt="logo domaine Rion" src="<?=get_template_directory_uri()?>/img/DOMAINE_RION_LOGO.png">
+    </a>
+    <div class="row">
+      <?=display_primary_menu()?>
     </div>
 
-  <!-- sur-menu -->
-    <div class="sur-menu small-12 medium-10 column text-right">
-      Notre numéro de téléphone : 
-      <br class="show-for-small-only"/>
-      <strong><a href="tel:0380308585">03 80 30 85 85</a></strong>
-      <!--<div id="paiement"><i class="fa fa-lock"></i>Paiement en ligne</div>-->
-    </div>
+  </div>
 
-  <!-- Btn Menu small -->
-    <div class="small-12 columns text-center" data-responsive-toggle="main-menu" data-hide-for="medium">
-      <div id="btn-menu" data-toggle>
-        <i class="fa fa-bars"></i>
-        MENU
-      </div>
-    </div>
-
-  <!-- Menu -->
-    <div class="small-12 medium-12 large-10 column text-center" id="main-menu">
-      
-        <?=display_primary_menu()?>
-      
-    </div>
-  
-
-</div>

@@ -132,6 +132,33 @@ function thumb_or_first($post_id = null, $path = true, $nopic = false, $size = '
   return $thumb;
 }
 
+function display_home_menu(){
+
+$menu_name = 'main-menu';
+
+    if ( isset( $locations[ $menu_name ] ) ) {
+  $menu = wp_get_nav_menu_object( $locations[ $menu_name ] );
+
+  $menu_items = wp_get_nav_menu_items($menu->term_id);
+
+  $menu_list = '<ul id="menu-' . $menu_name . '">';
+
+  foreach ( (array) $menu_items as $key => $menu_item ) {
+      $title = $menu_item->title;
+      $url = $menu_item->url;
+      $menu_list .= '<li><a href="' . $url . '">' . $title . '</a></li>';
+  }
+  $menu_list .= '</ul>';
+    } else {
+
+  $menu_list = '<ul><li>Menu "' . $menu_name . '" not defined.</li></ul>';
+    }
+
+    echo($menu_list);
+}
+
+
+
 function get_all_news(){
   $args = array(     
     'post_type'   => 'post',
