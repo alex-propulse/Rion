@@ -15,5 +15,5 @@ $postTitle =get_the_title($post->ID);
         </div>
     </div>
 </div>
-
+	
 <?php get_footer(); ?>

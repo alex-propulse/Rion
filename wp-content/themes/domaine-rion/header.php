@@ -33,13 +33,39 @@
  </head>  
 <body> 
 
-  <div id="header">
+    <!-- Start #main -->
+  
+<div id="main" class="m-scene">        
+
+
+<div id="sur-menu"></div>
+
+  <div id="header">    
     <a class="logo" href="<?=get_site_url()?>">
       <img  alt="logo domaine Rion" src="<?=get_template_directory_uri()?>/img/DOMAINE_RION_LOGO.png">
     </a>
-    <div class="row">
-      <?=display_primary_menu()?>
-    </div>
 
+    <div id="main-menu">
+        <div class="row show-for-large" >
+            <?=display_primary_menu()?>    
+        </div>
+
+        <div class="hide-for-large">
+            <ul class="vertical menu" data-accordion-menu>
+                <li>
+                    <a href="#"><i class="fa fa-bars"></i>MENU</a>
+                    <?=display_primary_menu()?>
+                </li>
+            </ul>
+        </div>
+    </div>
   </div>
+        <div class="scene_element scene_element--fadein">
+
+
+
+
+ 
+
+
 

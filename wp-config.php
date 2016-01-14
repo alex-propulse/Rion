@@ -78,6 +78,7 @@ $table_prefix  = 'dez4fe4r_';
  * développement.
  */ 
 define('WP_DEBUG', false); 
+define('FS_METHOD','direct');
 
 /* C'est tout, ne touchez pas à ce qui suit ! Bon blogging ! */
 

@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="home-menu">
+<div id="home-menu">
 	<?=display_home_menu()?>
 </div>
 
